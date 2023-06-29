@@ -7,6 +7,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --grey-tint-2: #d9d9d9;
 }
 
 .fa-solid {
@@ -23,6 +24,15 @@ body {
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-container main {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
 .section-title {
@@ -55,6 +65,20 @@ body {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.txt-inter {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "raleway", sans-serif;
+}
+
+button {
+  background-color: transparent;
 }
 
 /***** header *****/
@@ -93,6 +117,90 @@ header li:hover {
   border-top: var(--main-color) solid 2px;
   cursor: pointer;
   float: none;
+}
+
+/****** infos-group *****/
+
+.infos-group {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.recherche {
+  display: flex;
+}
+
+.formulaire label {
+  background-color: var(--main-bg-color);
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.champ {
+  border: 1px solid var(--main-bg-color);
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "raleway", sans-serif;
+}
+
+.formulaire button {
+  padding: 15px;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  border: none;
+  background-color: var(--main-color);
+}
+
+/***** Filtres *****/
+.filtre {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.quatre-filtre {
+  display: flex;
+  gap: 15px;
+}
+
+.bouton-filtre {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-family: "raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  gap: 10px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  border: 2px solid var(--grey-tint-2);
+}
+
+.quatre-filtre button:hover {
+  background-color: var(--filter-bg-color);
+}
+
+/***** infos-barre *****/
+.infos-barre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.infos-barre i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px var(--grey-tint-2) solid;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -148,10 +256,6 @@ header li:hover {
 .populaires-cards .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
-}
-
-.populaires-cards .card-subtitle {
-  margin: 0;
 }
 
 .populaires-cards .card-rating {
