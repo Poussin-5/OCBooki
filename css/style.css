@@ -54,6 +54,7 @@ body {
 
 .card-title {
   font-size: 16px;
+  margin: 0;
 }
 
 .euro {
@@ -66,6 +67,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 p {
@@ -110,7 +112,6 @@ header ul {
 header li {
   padding-top: 15px;
   border-top: 2px solid white;
-  color: black;
 }
 
 header li:hover {
@@ -234,8 +235,12 @@ header li:hover {
 .hebergements .card {
   flex-direction: column;
   margin: 0;
-  width: 100%;
+
   gap: 4px;
+}
+
+.hebergements a {
+  width: 100%;
 }
 
 .hebergements-cards img {
@@ -294,6 +299,40 @@ header li:hover {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+
+/***** Activités *****/
+
+.activites {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+}
+
+.activites-cards img {
+  border-radius: 20px 20px 0 0;
+  height: 380px;
+  width: 100%;
+}
+
+.activites-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.activites-cards .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.activites-cards a {
+  width: 100%;
+}
+
+.activites-cards .card-content {
+  padding: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
