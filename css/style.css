@@ -235,7 +235,6 @@ header li:hover {
 .hebergements .card {
   flex-direction: column;
   margin: 0;
-
   gap: 4px;
 }
 
