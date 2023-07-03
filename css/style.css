@@ -84,6 +84,10 @@ button {
   background-color: transparent;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /***** header *****/
 header {
   display: flex;
@@ -118,7 +122,6 @@ header li:hover {
   color: var(--main-color);
   border-top: var(--main-color) solid 2px;
   cursor: pointer;
-  float: none;
 }
 
 /****** infos-group *****/
@@ -332,6 +335,30 @@ header li:hover {
 
 .activites-cards .card-content {
   padding: 20px;
+}
+
+/***** footer *****/
+
+.footer {
+  display: flex;
+  background-color: var(--main-bg-color);
+}
+
+.footer-liste {
+  width: 100%;
+  padding: 20px;
+}
+
+.footer-liste ul,
+.footer-liste li {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-liste ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
