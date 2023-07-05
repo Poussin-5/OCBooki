@@ -385,6 +385,11 @@ header li:hover {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .filtre {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -404,16 +409,12 @@ header li:hover {
     justify-content: space-between;
   }
 
-  .populaires-cards .card {
+  .populaires-cards a {
     width: 30%;
   }
 
-  .populaires-cards .card-title {
-    font-size: 14px;
-  }
-
-  .populaires-cards .card-subtitle {
-    font-size: 13px;
+  .activites-cards img {
+    height: 200px;
   }
 }
 
