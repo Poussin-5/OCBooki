@@ -99,8 +99,11 @@ button {
   background-color: transparent;
 }
 
-ul {
+ul,
+li {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /***** header *****/
@@ -124,8 +127,6 @@ header nav {
 header ul {
   display: flex;
   gap: 60px;
-  padding: 0;
-  margin: 0;
 }
 
 header li {
@@ -151,7 +152,7 @@ header a:hover {
   gap: 35px;
 }
 
-.recherche {
+.search {
   display: flex;
 }
 
@@ -214,13 +215,13 @@ header a:hover {
 }
 
 /***** infos-barre *****/
-.infos-barre {
+.infos-bar {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.infos-barre i {
+.infos-bar i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,12 +374,6 @@ header a:hover {
   padding: 20px;
 }
 
-.footer-liste ul,
-.footer-liste li {
-  padding: 0;
-  margin: 0;
-}
-
 .footer-liste ul {
   display: flex;
   flex-direction: column;
@@ -472,7 +467,7 @@ header a:hover {
 
   /***** formulaire de recherche *****/
 
-  .recherche button {
+  .search button {
     border-radius: 15px;
   }
 
