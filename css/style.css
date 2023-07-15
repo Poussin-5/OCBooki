@@ -166,6 +166,11 @@ header li:hover a {
   display: none;
 }
 
+.formulaire button .btn-txt {
+  display: inline;
+  font-style: normal;
+}
+
 .formulaire label {
   background-color: var(--main-bg-color);
   border-radius: 15px 0 0 15px;
@@ -494,8 +499,9 @@ header li:hover a {
     display: inline;
   }
 
-  .btn-txt {
+  .formulaire button .btn-txt {
     display: none;
+    font-style: normal;
   }
 
   /***** filtres *****/
