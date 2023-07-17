@@ -379,10 +379,11 @@ header li:hover a {
 .footer {
   display: flex;
   background-color: var(--main-bg-color);
+  width: 100%;
 }
 
 .footer-liste {
-  width: 33%;
+  width: 100%;
   padding: 20px;
 }
 
@@ -579,6 +580,6 @@ header li:hover a {
   }
 
   .footer-liste {
-    width: 100%;
+    width: 80%;
   }
 }
